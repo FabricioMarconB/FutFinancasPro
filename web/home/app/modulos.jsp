@@ -24,22 +24,22 @@
             
             <li><a href="<%= request.getContextPath() %>/home/app/adm/tipousuario.jsp">Tipos Usuário</a></li>
             <li><a href="<%= request.getContextPath() %>/home/app/adm/usuario.jsp">Usuários</a></li>
-            <li><a href="<%= request.getContextPath() %>/home/app/adm/clube.jsp">Clubes (CRUD 1)</a></li>
-            <li><a href="<%= request.getContextPath() %>/home/app/adm/atleta.jsp">Atletas (CRUD 2)</a></li>
+            <li><a href="<%= request.getContextPath() %>/home/app/adm/clube.jsp">Clubes</a></li>
+            <li><a href="<%= request.getContextPath() %>/home/app/adm/atleta.jsp">Atletas</a></li>
             
     <% } %>
 
     <% if( ( tipoUsuarioSessao != null ) &&
             ( tipoUsuarioSessao.getModuloElenco().equals("S") == true ) ) { %>
             
-            <li><a href="<%= request.getContextPath() %>/home/app/elenco/contrato.jsp">Contratos de Elenco (CRUD 3)</a></li>
+            <li><a href="<%= request.getContextPath() %>/home/app/elenco/contrato.jsp">Contratos de Elenco</a></li>
             
     <% } %>
 
     <% if( ( tipoUsuarioSessao != null ) &&
             ( tipoUsuarioSessao.getModuloFinanceiro().equals("S") == true ) ) { %>
             
-            <li><a href="<%= request.getContextPath() %>/home/app/financeiro/lancamento.jsp">Lançamentos Financeiros (CRUD 4)</a></li>
+            <li><a href="<%= request.getContextPath() %>/home/app/financeiro/lancamento.jsp">Lançamentos Financeiros</a></li>
             
     <% } %>
     
